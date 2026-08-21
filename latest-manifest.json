@@ -1,0 +1,17 @@
+{
+  "version": "0.3.2",
+  "notes": "v0.3.2\n\nFixed: a false fuel-critical alert could trigger right at the start of a\nstint, before enough consumption data was available, and stay stuck on\nscreen even after the real fuel reading returned to normal.\n",
+  "asset": {
+    "fileName": "IracingRaceEngineer.Wpf-win-x64-v0.3.2.zip",
+    "url": "https://github.com/jonathnawill/iracing-race-engineer-releases/releases/download/v0.3.2/IracingRaceEngineer.Wpf-win-x64-v0.3.2.zip",
+    "sha256": "8badbcf9b8a073a185e17de5a6f702039eaa0e89e50efcc52c12bd7e0aaf07d7",
+    "sizeBytes": 97545170
+  },
+  "virusTotal": {
+    "reportUrl": "https://www.virustotal.com/gui/file/8badbcf9b8a073a185e17de5a6f702039eaa0e89e50efcc52c12bd7e0aaf07d7",
+    "malicious": 0,
+    "suspicious": 0,
+    "harmless": 0,
+    "undetected": 64
+  }
+}
