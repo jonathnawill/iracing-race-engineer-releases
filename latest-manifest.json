@@ -1,14 +1,14 @@
 {
-  "version": "0.3.3",
-  "notes": "v0.3.3\n\nFixed: the fuel-save advisory could fire on every lap while the margin\nstayed thin, with an audio alert each time, instead of once when it\nactually became worth flagging.\n\nFixed: the fuel-save advisory's threshold demanded more spare fuel\nthan necessary, flagging races that finished with a comfortable\nmargin as tight - following the advice in that case could cost track\nposition with no real benefit.\n\nAdded: the notification log's font size can now be adjusted (A-/A+\nbuttons next to its header) and is remembered across launches.\n\nFixed: the website's checksum/VirusTotal display never rendered due\nto a CORS restriction on GitHub's side - unrelated to this app\ndirectly, but fixed as part of this release's infrastructure.\n",
+  "version": "0.4.0",
+  "notes": "chore: bump version to 0.4.0\n",
   "asset": {
-    "fileName": "IracingRaceEngineer.Wpf-win-x64-v0.3.3.zip",
-    "url": "https://github.com/jonathnawill/iracing-race-engineer-releases/releases/download/v0.3.3/IracingRaceEngineer.Wpf-win-x64-v0.3.3.zip",
-    "sha256": "5b82975811cff93811271e370b6d6d3998c33c9b9c965010dcfad4f623fa4aaa",
-    "sizeBytes": 97551185
+    "fileName": "IracingRaceEngineer.Wpf-win-x64-v0.4.0.zip",
+    "url": "https://github.com/jonathnawill/iracing-race-engineer-releases/releases/download/v0.4.0/IracingRaceEngineer.Wpf-win-x64-v0.4.0.zip",
+    "sha256": "2204743bcc0c9a8ef9e333af8e5e31016c4adc9287d0679da956058f0186617f",
+    "sizeBytes": 100040123
   },
   "virusTotal": {
-    "reportUrl": "https://www.virustotal.com/gui/file/5b82975811cff93811271e370b6d6d3998c33c9b9c965010dcfad4f623fa4aaa",
+    "reportUrl": "https://www.virustotal.com/gui/file/2204743bcc0c9a8ef9e333af8e5e31016c4adc9287d0679da956058f0186617f",
     "malicious": 0,
     "suspicious": 0,
     "harmless": 0,
