@@ -1,17 +1,17 @@
-{
-  "version": "0.4.0",
-  "notes": "chore: bump version to 0.4.0\n",
-  "asset": {
-    "fileName": "IracingRaceEngineer.Wpf-win-x64-v0.4.0.zip",
-    "url": "https://github.com/jonathnawill/iracing-race-engineer-releases/releases/download/v0.4.0/IracingRaceEngineer.Wpf-win-x64-v0.4.0.zip",
-    "sha256": "2204743bcc0c9a8ef9e333af8e5e31016c4adc9287d0679da956058f0186617f",
-    "sizeBytes": 100040123
-  },
-  "virusTotal": {
-    "reportUrl": "https://www.virustotal.com/gui/file/2204743bcc0c9a8ef9e333af8e5e31016c4adc9287d0679da956058f0186617f",
-    "malicious": 0,
-    "suspicious": 0,
-    "harmless": 0,
-    "undetected": 64
-  }
+﻿{
+    "version":  "0.4.0",
+    "notes":  "Real tire recommendations, a full Race History screen, and rival flag alerts.\n\nAdded:\n- Race History now shows pit stops (tires changed, duration) and lap-by-lap detail per session, plus click-to-sort columns - Laps, Fuel, Best lap etc. sort by real value, not alphabetically.\n- Tire Strategy now recommends a real tire change (or \"no change\") based on your own recorded pit-stop and stint history for that car/track - starts showing up once you\u0027ve raced a car/track combo enough times to build a real sample.\n- A \"track\u0027s nearly dry, switch to slicks at your next stop\" advisory, for when conditions cross back from wet toward dry mid-race.\n- A notification when the car directly ahead or behind you gets a black flag, is disqualified, or is called in for mandatory repair.\n- The overlay can now be pinned (small pin icon next to the close button) so it stays up instead of auto-hiding once the condition that triggered it resolves.\n\nFixed:\n- Session duration in History almost always showed \"-\" instead of the real elapsed time.\n- The track-drying advisory could permanently miss the wet-to-dry transition if it happened to land on a lap where you were in the pits for something unrelated.\n- Closing the app could fail to save a session\u0027s real end time, if the window closed while the telemetry loop\u0027s own cleanup was still running.\n",
+    "asset":  {
+                  "fileName":  "IracingRaceEngineer.Wpf-win-x64-v0.4.0.zip",
+                  "url":  "https://github.com/jonathnawill/iracing-race-engineer-releases/releases/download/v0.4.0/IracingRaceEngineer.Wpf-win-x64-v0.4.0.zip",
+                  "sha256":  "2204743bcc0c9a8ef9e333af8e5e31016c4adc9287d0679da956058f0186617f",
+                  "sizeBytes":  100040123
+              },
+    "virusTotal":  {
+                       "reportUrl":  "https://www.virustotal.com/gui/file/2204743bcc0c9a8ef9e333af8e5e31016c4adc9287d0679da956058f0186617f",
+                       "malicious":  0,
+                       "suspicious":  0,
+                       "harmless":  0,
+                       "undetected":  64
+                   }
 }
