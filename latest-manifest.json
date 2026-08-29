@@ -1,17 +1,17 @@
-﻿{
-    "version":  "0.4.0",
-    "notes":  "Real tire recommendations, a full Race History screen, and rival flag alerts.\n\nAdded:\n- Race History now shows pit stops (tires changed, duration) and lap-by-lap detail per session, plus click-to-sort columns - Laps, Fuel, Best lap etc. sort by real value, not alphabetically.\n- Tire Strategy now recommends a real tire change (or \"no change\") based on your own recorded pit-stop and stint history for that car/track - starts showing up once you\u0027ve raced a car/track combo enough times to build a real sample.\n- A \"track\u0027s nearly dry, switch to slicks at your next stop\" advisory, for when conditions cross back from wet toward dry mid-race.\n- A notification when the car directly ahead or behind you gets a black flag, is disqualified, or is called in for mandatory repair.\n- The overlay can now be pinned (small pin icon next to the close button) so it stays up instead of auto-hiding once the condition that triggered it resolves.\n\nFixed:\n- Session duration in History almost always showed \"-\" instead of the real elapsed time.\n- The track-drying advisory could permanently miss the wet-to-dry transition if it happened to land on a lap where you were in the pits for something unrelated.\n- Closing the app could fail to save a session\u0027s real end time, if the window closed while the telemetry loop\u0027s own cleanup was still running.\n",
-    "asset":  {
-                  "fileName":  "IracingRaceEngineer.Wpf-win-x64-v0.4.0.zip",
-                  "url":  "https://github.com/jonathnawill/iracing-race-engineer-releases/releases/download/v0.4.0/IracingRaceEngineer.Wpf-win-x64-v0.4.0.zip",
-                  "sha256":  "2204743bcc0c9a8ef9e333af8e5e31016c4adc9287d0679da956058f0186617f",
-                  "sizeBytes":  100040123
-              },
-    "virusTotal":  {
-                       "reportUrl":  "https://www.virustotal.com/gui/file/2204743bcc0c9a8ef9e333af8e5e31016c4adc9287d0679da956058f0186617f",
-                       "malicious":  0,
-                       "suspicious":  0,
-                       "harmless":  0,
-                       "undetected":  64
-                   }
+{
+  "version": "0.5.0",
+  "notes": "Race Engineer 0.5.0\n\nThis release closes the loop between fuel, tyres, pit strategy and race history,\nand hardens everything that endurance racing exposed. Recommended for all users.\n\nHighlights\n\n* Race Summary — a new History tab that answers \"how was my race?\": laps, pace,\n  fuel and pit stops, with a stint-by-stint breakdown and a comparison against\n  your previous session on the same car and track.\n* Tyre recommendations stay on screen — a second always-on-top overlay holds a\n  pending tyre-change recommendation for as long as it applies, instead of a\n  toast that clears itself while you are looking at the track.\n* Honest confidence — when tyre strategy has no recommendation yet, the app now\n  tells you how many samples it has against how many it needs, and a new Race\n  Readiness line summarises whether fuel, tyres and pit are ready.\n* Tyre-only stops are costed correctly — pitting for tyres alone also costs the\n  time of pitting at all, which is now included instead of only the marginal\n  cost over a fuel stop.\n\nFixed\n\n* No more unnecessary pit call on the final lap when the fuel already on board\n  reaches the checkered flag, and no more pit calls after the flag has fallen.\n* \"Stay out\" and \"pit window open\" are no longer announced at the same time\n  after a stop, with two chat macros sent to iRacing.\n* Phantom pit stops are gone. Leaving the garage, a mid-race garage visit and\n  the first tick on a parked car were each recorded as real stops and were\n  corrupting the pit-loss and tyre-service figures the strategy depends on.\n* The live race can no longer be deleted from History. Opening History during a\n  long pre-race wait could erase the running session, after which nothing else\n  from that race was recorded.\n* A session's end time is now recorded when the session actually ends.\n* Local yellow flags no longer discard a lap's fuel sample — only a full-course\n  caution does. On long circuits this was costing the fuel estimate a large\n  share of its samples, and measurably in the wrong direction.\n* Tyre wear is no longer displayed as a negative percentage, and a stop with no\n  reading is recorded as \"not measured\" rather than as a measured zero.\n* Overlays can no longer get permanently pinned on screen by the positioning\n  button.\n* Fixed a crash when opening the History window, and a Portuguese tyre\n  recommendation shown with an English explanation.\n\nAlso in this release\n\n* Fuel level is now recorded at the end of each lap and at pit entry and exit,\n  and fuel added at a stop is derived from it.\n* Only one copy of Race Engineer runs at a time; a second launch brings the\n  existing window forward.\n* Fuel-critical alerts are suppressed once you are already on pit road.\n* Closing the window is faster.\n\nKnown limitations\n\n* Tyre wear per stint is still not recorded for a completed stop — iRacing\n  delivers the reading after the car has left the pits. This release reports\n  that honestly instead of storing a false zero.\n* A recorded session still corresponds to an application run rather than to an\n  iRacing practice, qualifying or race session.\n",
+  "asset": {
+    "fileName": "IracingRaceEngineer.Wpf-win-x64-v0.5.0.zip",
+    "url": "https://github.com/jonathnawill/iracing-race-engineer-releases/releases/download/v0.5.0/IracingRaceEngineer.Wpf-win-x64-v0.5.0.zip",
+    "sha256": "a1ac9c7056595a149291375817c8052dfcd09d95a62740421ae80714c5ad405a",
+    "sizeBytes": 100034679
+  },
+  "virusTotal": {
+    "reportUrl": "https://www.virustotal.com/gui/file/a1ac9c7056595a149291375817c8052dfcd09d95a62740421ae80714c5ad405a",
+    "malicious": 0,
+    "suspicious": 0,
+    "harmless": 0,
+    "undetected": 64
+  }
 }
