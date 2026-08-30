@@ -1,17 +1,17 @@
 {
-  "version": "0.6.0",
-  "notes": "Race Engineer 0.6.0\n\nA small release: one new button, and nothing else changed. Everything from\n0.5.0 stays as it is.\n\nNew\n\n* Report a problem without hunting for where. A \"Report an issue\" button in\n  the header opens the report form on iraceengineer.com in your browser. The\n  form has been there for a while — the app just never said so. Tell us what\n  broke, and optionally leave an email if you want a reply.\n\nThe app itself collects and sends nothing. Clicking the button opens your\nbrowser, exactly like the support link next to it; the report is written on\nthe website, as it always was.\n",
+  "version": "0.7.0",
+  "notes": "Race Engineer 0.7.0\n\nA polish release. Nothing about fuel, pit or tyre strategy changed - this is\nabout the two screens that were fighting you: the update window and the race\nhistory detail.\n\nUpdating\n\n* You are told when it worked. After an update the app used to come back with\n  nothing said about whether it had succeeded. It now confirms the new version\n  once, and only after a version really went up - a normal launch and an\n  automatic rollback stay quiet.\n* You are told what is about to happen. The update window now explains that\n  Race Engineer will close and reopen by itself, and that your history and\n  settings are untouched.\n* You are told it is happening. Accepting the update shows a clear \"updating\"\n  state instead of the window simply vanishing.\n* The window fits the release notes instead of forcing you to scroll through a\n  fixed little box, and its buttons can no longer end up off the bottom of the\n  screen.\n* \"Update now\" can no longer fail silently. If it cannot start - because you\n  connected to iRacing in the meantime, for instance - it says so and stays on\n  this version.\n\nAlso\n\n* The version you are running is now shown in the header, next to the app\n  name - it was nowhere in the app before, so there was no way to tell which\n  build you were on.\n\nRace history\n\n* The session detail now uses the width of the window instead of a fixed strip\n  at the bottom. For a 180-lap race it showed about five rows; now it shows the\n  session in full, side by side with the session list, and a drag bar lets you\n  rebalance the two.\n* The active tab is highlighted. Pit stops, laps and race summary used to look\n  identical whichever one was open.\n* The race summary no longer shows two scrollbars side by side, and the mouse\n  wheel works over the stint table - it previously did nothing there.\n* The car and track list is easier to scan: car, track and session count on\n  their own lines rather than one long wrapped sentence.\n* Nothing is cut off any more - not the last tab, not the right-hand columns of\n  the session list - and the window can no longer open taller than your screen.\n",
   "asset": {
-    "fileName": "IracingRaceEngineer.Wpf-win-x64-v0.6.0.zip",
-    "url": "https://github.com/jonathnawill/iracing-race-engineer-releases/releases/download/v0.6.0/IracingRaceEngineer.Wpf-win-x64-v0.6.0.zip",
-    "sha256": "e75dfca47546b6f94355837a6476c05e9af5adc6f846e85347324ecaf46a2bc3",
-    "sizeBytes": 100035142
+    "fileName": "IracingRaceEngineer.Wpf-win-x64-v0.7.0.zip",
+    "url": "https://github.com/jonathnawill/iracing-race-engineer-releases/releases/download/v0.7.0/IracingRaceEngineer.Wpf-win-x64-v0.7.0.zip",
+    "sha256": "7791590c37721c0aaaae517f294d07c9061f1391d6f3b67166e4f8bb32146ebc",
+    "sizeBytes": 100040231
   },
   "virusTotal": {
-    "reportUrl": "https://www.virustotal.com/gui/file/e75dfca47546b6f94355837a6476c05e9af5adc6f846e85347324ecaf46a2bc3",
+    "reportUrl": "https://www.virustotal.com/gui/file/7791590c37721c0aaaae517f294d07c9061f1391d6f3b67166e4f8bb32146ebc",
     "malicious": 0,
     "suspicious": 0,
     "harmless": 0,
-    "undetected": 64
+    "undetected": 63
   }
 }
